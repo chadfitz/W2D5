@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.ingredients-list {
+    list-style: square inside;
+}
+
+ol {
+    list-style: armenian inside;
+}
+
+/* all img's that are a direct child of header */
+header > img {
+    width: 100px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: inherit;
+}
