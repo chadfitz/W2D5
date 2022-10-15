@@ -24,14 +24,7 @@ class List
 
     def valid_index?(index)
         index >= 0 && index < @items.length
-    end
-
-    def swap(index_1, index_2)
-        if valid_index?(index_1) && valid_index?(index_2)
-            @items[index_1], @items[index_2] = @items[index_2], @items[index_1]
-        else
-            return false
-        end
+        # index.to_i >= 0 && index < @items.length.to_i
     end
 
     def [](index)
@@ -39,6 +32,14 @@ class List
             @items[index]
         else
             nil
+        end
+    end
+
+    def swap(index_1, index_2)
+        if valid_index?(index_1) && valid_index?(index_2)
+            @items[index_1], @items[index_2] = @items[index_2], @items[index_1]
+        else
+            return false
         end
     end
 
